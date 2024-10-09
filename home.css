@@ -1,0 +1,45 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html{
+    scroll-behavior:smooth;
+}
+
+
+nav{
+
+    font-family: "Roboto", sans-serif;
+    background-color: blue;
+
+} 
+
+.nav-link{
+
+    font-family: "Roboto", sans-serif;
+
+
+} 
+ 
+ 
+.bannimg{
+
+    font-family: "Roboto", sans-serif;
+    background-image:url('download.jpg');
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#about{
+    text-align: center;
+   
+    background-color: black;
+    
+}
+.card{
+    
+   
+    background-color: black;
+    
+}
