@@ -1,0 +1,58 @@
+body {
+    background-image: url("1.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Calculator {
+    width: 30rem;
+    height: 50rem;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(4, 70px); /* 4 equal columns */
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+}
+
+.operator, .number, .empty {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: white;
+    font-size: 20px;
+    border: 2px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.operator:hover, .number:hover, .empty:hover {
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.empty {
+    background-color: transparent;
+    border: none;
+    cursor: default;
+}
+
+.number.zero {
+    grid-column: span 2; /* Makes the 0 button span across two columns */
+}
