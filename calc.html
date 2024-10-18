@@ -5,27 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="calc.css"></link>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+        </style>
+
 </head>
 <body>
     <div class="container">
+        
+        <h1>My Calculator</h1>
+
         <div class="Calculator">
+            <div id="result">
+                <div id="history">
+                    <p id="hisval"></p>
+
+                </div>
+                <div id="output">
+                    <p id="outval"></p>
+
+                </div>
+
+            </div>
+            
+            
             <div class="keyboard">
                 <button class="operator">C</button>
                 <button class="operator">CE</button>
-                <button class="operator">%</button>
-                <button class="operator">+</button>
+                <button class="operator" id="per">%</button>
+                <button class="operator" id="add">+</button>
                 <button class="number">1</button>
                 <button class="number">2</button>
                 <button class="number">3</button>
-                <button class="operator">-</button>
+                <button class="operator" id="min">-</button>
                 <button class="number">4</button>
                 <button class="number">5</button>
                 <button class="number">6</button>
-                <button class="operator">x</button>
+                <button class="operator" id="mul">x</button>
                 <button class="number">7</button>
                 <button class="number">8</button>
                 <button class="number">9</button>
-                <button class="operator">/</button>
+                <button class="operator" id="div">/</button>
                 <button class="empty"></button>
                 <button class="number zero">0</button>
                 <button class="empty"></button>
